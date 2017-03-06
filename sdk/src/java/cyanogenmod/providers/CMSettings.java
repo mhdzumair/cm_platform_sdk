@@ -1576,6 +1576,16 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * Option to disable the animation on nav bar
+	     * @hide
+         */
+        public static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
+
+        /** @hide */
+        public static final Validator PIXEL_NAV_ANIMATION_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to allow one finger quick settings expansion on the side of the statusbar.
          * 0 = 0ff, 1 = right, 2 = left
          */
@@ -1988,6 +1998,7 @@ public final class CMSettings {
                 CMSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                 CMSettings.System.SHOW_ALARM_ICON,
                 CMSettings.System.STATUS_BAR_IME_SWITCHER,
+                CMSettings.System.PIXEL_NAV_ANIMATION,
                 CMSettings.System.QS_SHOW_BRIGHTNESS_SLIDER,
                 CMSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
                 CMSettings.System.VOLBTN_MUSIC_CONTROLS,
@@ -2143,6 +2154,7 @@ public final class CMSettings {
             VALIDATORS.put(LOCKSCREEN_ROTATION, LOCKSCREEN_ROTATION_VALIDATOR);
             VALIDATORS.put(SHOW_ALARM_ICON, SHOW_ALARM_ICON_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
+            VALIDATORS.put(PIXEL_NAV_ANIMATION, PIXEL_NAV_ANIMATION_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
                     STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR);
             VALIDATORS.put(QS_SHOW_BRIGHTNESS_SLIDER, QS_SHOW_BRIGHTNESS_SLIDER_VALIDATOR);
